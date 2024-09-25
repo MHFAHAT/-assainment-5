@@ -5,12 +5,12 @@ document.getElementById('donate-btn') .addEventListener('click', function (event
     const adddonatedMoney = showvalue('noakhali-dona')   
     if(isNaN(addMoney)||addMoney<=0||addMoney>addmyMoney){
         alert('Failed to add money');
-        document.getElementById('amount').value=' ';
+        document.getElementById('amount').value='';
         return;
     }
     else{
         my_modal_5.showModal();
-        document.getElementById('amount').value=' ';
+        document.getElementById('amount').value='';
     }  
     const new_myMoney = addmyMoney - addMoney ;
     const new_donatedmoney = addMoney + adddonatedMoney; 
@@ -37,12 +37,12 @@ document.getElementById('feni-btn') .addEventListener('click', function (event){
     const adddonatedMoney1 = showvalue('feni')   
     if(isNaN(addMoney1)||addMoney1<=0||addMoney1>addmyMoney1|| typeof addMoney1 !=='number' ){
         alert('Failed to add money');
-        document.getElementById('amount1').value=' ';
+        document.getElementById('amount1').value='';
         return;
     }
     else{
         my_modal_5.showModal();
-        document.getElementById('amount1').value=' ';
+        document.getElementById('amount1').value='';
     }   
     const new_myMoney1 = addmyMoney1 - addMoney1 ;
     const new_donatedmoney1 = addMoney1 + adddonatedMoney1; 
@@ -65,15 +65,15 @@ document.getElementById('aid-btn') .addEventListener('click', function (event){
     const addMoney2 = getInputField('amount2')
     const addmyMoney2 = showvalue('wallet')  
     const adddonatedMoney2 = showvalue('aid')   
-    if(isNaN(addMoney2||addMoney2<=0||addMoney2>addmyMoney2|| typeof addMoney2 !=='number' )){
+    if(isNaN(addMoney2)||addMoney2<=0||addMoney2>addmyMoney2|| typeof addMoney2 !=='number' ){
         alert('Failed to add money');
-        document.getElementById('amount2').value=' ';
+        document.getElementById('amount2').value='';
         return;
        
     }
     else{
         my_modal_5.showModal();
-        document.getElementById('amount2').value=' ';
+        document.getElementById('amount2').value='';
     }   
     const new_myMoney2 = addmyMoney2 - addMoney2 ;
     const new_donatedmoney2 = addMoney2 + adddonatedMoney2; 
